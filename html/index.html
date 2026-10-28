@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Game Search</title>
+
+<style>
+	*,
+	*::before,
+	*::after{
+		box-sizing:border-box;
+		font-family:Arial, sans-serif;
+	}
+
+	body{
+		margin:0;
+		background:linear-gradient(to bottom right, #f7f3ff, #eef4ff);
+		color:#222;
+	}
+
+	main{
+		max-width:850px;
+		margin:80px auto;
+		padding:0 20px;
+	}
+
+	h1{
+		text-align:center;
+		font-size:48px;
+		margin-bottom:35px;
+		color:#5d4ea1;
+	}
+
+	form{
+		background:white;
+		padding:35px;
+		border-radius:18px;
+		box-shadow:0 8px 25px rgba(93, 78, 161, 0.18);
+		border:2px solid #d8d3ff;
+	}
+
+	fieldset{
+		border:2px solid #c8c2ff;
+		border-radius:12px;
+		padding:25px;
+		display:flex;
+		gap:12px;
+		align-items:center;
+		background:#faf8ff;
+	}
+
+	legend{
+		font-weight:bold;
+		font-size:20px;
+		padding:0 10px;
+		color:#7d5bd1;
+	}
+
+	label{
+		font-weight:bold;
+		color:#5d4ea1;
+	}
+
+	input#game{
+		flex-grow:1;
+		height:40px;
+		padding:8px 12px;
+		font-size:16px;
+		border:2px solid #d6d6ff;
+		border-radius:10px;
+		outline:none;
+	}
+
+	input#game:focus{
+		border-color:#7f8cff;
+		box-shadow:0 0 8px rgba(127, 140, 255, 0.35);
+	}
+
+	input[type="submit"]{
+		height:40px;
+		padding:0 20px;
+		font-size:16px;
+		cursor:pointer;
+		border:none;
+		border-radius:10px;
+		background:linear-gradient(to right, #d98bb7, #7f8cff);
+		color:white;
+		font-weight:bold;
+		transition:0.2s;
+	}
+
+	input[type="submit"]:hover{
+		transform:scale(1.03);
+		opacity:0.95;
+	}
+</style>
+</head>
+
+<body>
+
+	<main>
+		<h1>Video Game Search Engine</h1>
+
+		<form action="search" method="get">
+			
+			<fieldset>
+				<legend>Search for a Video Game</legend>
+
+				<label for="game">Game Title:</label>
+
+				<input id="game" name="game" type="text" />
+
+				<input type="submit" value="Search" />
+			</fieldset>
+		</form>
+	</main>
+
+</body>
+</html>
